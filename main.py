@@ -29,7 +29,7 @@ y_pred = rf_model.predict(X_test)
 print(classification_report(y_test, y_pred))
 
 
-# Predict attrition for all employees
+# Predict attrition for all employee
 attrition_probabilities = rf_model.predict_proba(X)[:, 1]
 
 # Add attrition probabilities to the original DataFrame
