@@ -7,6 +7,7 @@ from sklearn.metrics import classification_report
 data=pd.read_csv("Employee.csv")
 
 
+
 # data.head()
 
 data.dropna(inplace=True)
@@ -41,3 +42,6 @@ employees_most_likely_to_leave = data.sort_values(by='Attrition_Probability', as
 # Display the top N employees most likely to leave
 N = 20  # Number of employees to display
 print(employees_most_likely_to_leave.head(N))
+
+
+
